@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Potta+One&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9fbe8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.fact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 25px 15px;
+}
+
+
+hr {
+    margin: 25px 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-fact-btn {
+    background-color: #0e9e75;
+    color: #fff;
+    font-size:16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.new-fact-btn:hover {
+    background-color: #057c5a;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e3e1e1;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.icon-circle i {
+    font-size: 1.5em;
+}
+
+.icon-circle:hover {
+    color: #fdfcfc;
+    background-color:#057c5a;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

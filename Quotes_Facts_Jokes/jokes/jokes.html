@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="jokes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="joke-container">
+        <h2>Joke of the Day</h2>
+        <blockquote class="setup">Loading...</blockquote>
+        <span class="punchline">Loading...</span>
+        <hr>
+        <div class="actions">
+            <div>
+                <button class="new-joke-btn">New Joke</button>
+            </div>
+            <div class="icons">
+                <a onclick="shareOntweet()" class="icon-circle">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a onclick="shareOnEmail()" class="icon-circle">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a onclick="shareOnLinkedIn()" class="icon-circle">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="jokes.js"></script>
+</body>
+</html>
+
+<!-- https://official-joke-api.appspot.com/random_joke -->
+<br>
+<!-- https://github.com/15Dkatz/official_joke_api -->
