@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+    <form id="contactForm" class="contact-form" name="contact-us" method="post" action="/contact">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" id="btnLocalStorage">Send to Local Storage</button>
+            <button type="button" id="btnEmail">Send via Email</button>
+            <button type="submit" id="btnDatabase">Send to Database</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
