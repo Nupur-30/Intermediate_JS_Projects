@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="./assets/weather-app.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left"><p>Weatherly.</p></div>
+            <div class="right">
+                <div class="input-group searchBar">
+                    <input class="form-control searchInput" id="search-Input" type="text" placeholder="Search..." value="Hyderabad"/>
+                    <span class="input-group-text search-icon-wrapper">
+                        <img src="assets/search.png" alt="Search Icon" class="search-icon">
+                    </span>
+                    <button class="btn search-btn" onclick="handleSearch()">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-image">
+                <img src="./assets/hero-bg/14.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-info">
+                <div class="box-1">
+                    <div class="temp">
+                        <div class="main-temp">13°C</div>
+                        <div class="min-max-temp"><span class="min">12°C</span> / <span class="max">14°C</span></div>
+                    </div>
+                    <div class="desc">
+                        <div class="main-icon"><img id="weather-icon" src="" alt=""></div>
+                        <div class="weather-des">Cloudy</div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="date">Aug 20, 2023</div>
+                    <div class="time-day"><span class="time">3:00 PM</span> | <span class="day">Monday</span></div>
+                    <div class="location"></div>
+                </div>
+            </div>
+        </div>
+        <div class="outer-footer">
+            <div class="footer">
+                <div class="left">
+                    <h6>Temperature v/s Time graph</h6>
+                    <canvas id="weatherChart" ></canvas>
+                </div>
+                <div class="right">
+                    <div class="predict">
+                        <div class="next">
+                            <div class="day">
+                                <div class="weekDay"></div>
+                                <div class="dayRelative"></div>
+                            </div>
+                            <div class="icon"><img src="" alt=""></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="next">
+                            <div class="day">
+                                <div class="weekDay"></div>
+                                <div class="dayRelative"></div>
+                            </div>
+                            <div class="icon"><img src="" alt=""></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="next">
+                            <div class="day">
+                                <div class="weekDay"></div>
+                                <div class="dayRelative"></div>
+                            </div>
+                            <div class="icon"><img src="" alt=""></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="next">
+                            <div class="day">
+                                <div class="weekDay"></div>
+                                <div class="dayRelative"></div>
+                            </div>
+                            <div class="icon"><img src="" alt=""></div>
+                            <div class="temp"></div>
+                        </div>
+                        <div class="next">
+                            <div class="day">
+                                <div class="weekDay"></div>
+                                <div class="dayRelative"></div>
+                            </div>
+                            <div class="icon"><img src="" alt=""></div>
+                            <div class="temp"></div>
+                        </div>
+                    </div>
+                    <div class="other-info">
+                        <div class="humidity others">
+                            <img src="./assets/humidity.png" alt="">
+                            <div class="heading">Humidity</div>
+                            <div class="humidity-value value"></div>
+                        </div>
+                        <div class="wind others">
+                            <img src="./assets/wind.png" alt="">
+                            <div class="heading">Wind</div>
+                            <div class="wind-value value"></div>
+                        </div>
+                        <div class="sunrise others">
+                            <img src="./assets/sunrise.png" alt="">
+                            <div class="heading">Sunrise</div>
+                            <div class="sunrise-value value"></div>
+                        </div>
+                        <div class="sunset others">
+                            <img src="./assets/sunset.png" alt="">
+                            <div class="heading">Sunset</div>
+                            <div class="sunset-value value"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

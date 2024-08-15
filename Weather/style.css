@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: rgba(144, 142, 142, 0.183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #ffffff;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    /* background-color: #d0c9ea; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3rem;
+}
+
+.hero{
+    height: 45%;
+}
+
+.outer-footer{
+    height: 45%;
+    width: 100%;
+}
+
+.footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navbar */
+.navbar .left p{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+}
+
+.navbar .right{
+    width: 50%
+}
+
+.searchBar {
+    max-width: 600px; 
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+    border-radius: 0.375rem; 
+    overflow: hidden;
+    border: 1px solid #ced4da;
+}
+
+#search-Input {
+    border: none; 
+    border-radius: 0.375rem 0 0 0.375rem;
+    height: 40px; 
+    padding: 0 15px;
+    box-shadow: none; 
+    outline: none !important; 
+    flex-grow: 1; 
+}
+
+.search-icon-wrapper {
+    background-color: #fff; 
+    padding: 0 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; 
+    height: 40px;
+    margin-left: -1px; 
+    border: 0;
+}
+
+.search-icon {
+    width: 18px; 
+    height: 18px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.search-btn {
+    border-radius: 0 0.375rem 0.375rem 0;
+    height: 40px;
+    padding: 0 20px;
+    box-shadow: none;
+    outline: none; 
+    background-color: #2d3c20f6; 
+    color: white;
+    border: 0;
+}
+
+.searchBar:focus-within {
+    box-shadow: 0 0 5px #393f34e3;
+    border-color: #393f3495; 
+    border-radius: 0.5rem;
+}
+
+.searchInput:focus, 
+.search-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(14, 54, 14, 0.1);
+    z-index: 1; 
+}
+
+.hero-info {
+    position: absolute;
+    bottom: 10%;
+    z-index: 2; /* to make sure info is above overlay */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 95%;
+    height: 45%;
+    left:50%;
+    transform: translateX(-50%); 
+    /* effectively shifts the entire box back to the left, so the middle of the box now aligns with the center of the parent */
+}
+
+.box-1{
+    background-color: #d4d0d0d6;
+    display: flex;
+    gap: 3rem;
+    padding: 10px 20px;
+}
+
+.temp, .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desc{
+    align-items: center;
+}
+
+.main-temp{
+    font-size: 3rem;
+    height: 60%;
+}
+
+.min-max-temp{
+    font-size: 1.5rem;
+}
+
+.main-icon{
+    height: 60%;
+}
+.main-icon img{
+   height: 80px;
+}
+
+.weather-des{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+    background-color: #d4d0d0d6;
+    padding: 10px 20px;
+}
+
+.time-day, .date{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.location{
+    font-size: 2.2rem;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/* footer */
+.footer .left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h6{
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 10px;
+}
+
+
+#weatherChart{
+    padding: 10px;
+    margin: 0px 30px;
+}
+
+.footer .right{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 1rem;
+}
+
+.footer .right .predict {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 60%;
+    margin: 20px 0px;
+}
+
+.footer .right .predict .next {
+    flex: 1; 
+    padding: 10px; 
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #a1b0b230;
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+
+.next .day{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.dayRelative{
+    font-size: 14px;
+    color: #e98811;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.predict .next img{
+    height: 3rem;
+}
+
+.next .temp{
+    font-weight: 500;
+}
+
+.footer .right .other-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.footer .right .other-info img{
+    height: 1.8rem;
+    
+}
+
+.footer .right .other-info .others {
+    flex: 1;
+    padding: 10px; 
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #a1b0b230;
+    border: 1px solid lightgrey;
+}
+
+.footer .right .other-info .heading {
+    font-size: 1rem;
+    margin: 5px 0px 10px 0px;
+    color: rgb(63, 59, 59);
+}
+
+.footer .right .other-info .value {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer .graph-container{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
