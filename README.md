@@ -1,7 +1,7 @@
 ## JS Projects (Intermediate Level)
 
 ### Project 1: WEATHER APP
-<img width="1470" height="600" alt="project_1_image" src="https://github.com/user-attachments/assets/c874267a-cc42-4757-ab39-465b0c7d71ce">
+<img width="1470" height="500" alt="project_1_image" src="https://github.com/user-attachments/assets/c874267a-cc42-4757-ab39-465b0c7d71ce">
 
 In this project, I focused on creating a visually appealing weather app with a clean and user-friendly UI. I used the OpenWeather API to fetch real-time weather data, including weather status and icons. Additionally, I incorporated a graph using Chart.js to visually represent temperature of the current day. 
 
